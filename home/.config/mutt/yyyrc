@@ -1,0 +1,10 @@
+# vim: filetype=muttrc
+
+set from 	= "mail.yyy@gmail.com"
+set sendmail 	= "/usr/bin/msmtp -a yyy"
+set mbox	= "+yyy/INBOX"
+set postponed	= "+[Gmail].Brouillons"
+unset record
+color status cyan default
+
+macro index ,e "<change-folder>+xxx/INBOX<return>" "change to xxx email"

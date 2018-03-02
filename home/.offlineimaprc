@@ -1,0 +1,38 @@
+[general]
+accounts = yyy, xxx
+starttls = yes
+ssl = yes
+autorefresh = 1
+
+
+[Account yyy]
+localrepository = yyy-local
+remoterepository = yyy-remote
+
+[Repository yyy-remote]
+type = Gmail
+remoteuser = mail.yyy@gmail.com
+remotepass = password 
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[Repository yyy-local]
+type = Maildir
+localfolders = ~/.Mail/yyy
+
+
+[Account xxx]
+localrepository = xxx-local
+remoterepository = xxx-remote
+
+[Repository xxx-remote]
+type = Gmail
+remoteuser = mail.xxx@custom-gmail.fr
+remotepass = password
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[Repository xxx-local]
+type = Maildir
+localfolders = ~/.Mail/xxx
+

@@ -1,0 +1,45 @@
+
+!#include <~/.termcolors/synthwave>
+
+Xft.dpi:			96		
+Xft.antialias:			1
+Xft.autohint:			1
+Xft.hinting:			1
+Xft.hintstyle:			hintslight
+Xft.lcdfilter:			lcddefault
+Xft.rgba:			rgb
+
+URxvt.termName:			rxvt-256color
+URxvt.font: 			xft:Iosevka Nerd Font:style=bold:pixelsize=13
+URxvt.depth:			32
+URxvt.lineSpace:	    	0
+URxvt.letterSpace:	    	0
+URxvt.iso14755:    	        false
+URxvt.iso14755_52:     		false
+URxvt.scrollBar:		false
+URxvt.scollStyle:          	rxvt
+URxvt.perl-ext-common:		default,clipboard,matcher
+
+*internalBorder:		15	
+*externalBorder:		15
+
+*background:   bg
+*foreground:   fg
+*cursorColor:  crs
+
+*color0:      blk
+*color8:      bblk
+*color1:      red
+*color9:      bred
+*color2:      grn
+*color10:     bgrn
+*color3:      ylw
+*color11:     bylw
+*color4:      blu
+*color12:     bblu
+*color5:      mag
+*color13:     bmag
+*color6:      cyn
+*color14:     bcyn
+*color7:      wht
+*color15:     bwht

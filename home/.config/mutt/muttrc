@@ -1,0 +1,95 @@
+# vim: filetype=muttrc
+
+# sources
+source ~/.config/mutt/xxxrc	# xxx mailbox
+source ~/.config/mutt/yyyrc	# yyy mailbox
+source ~/.config/mutt/aliases	# aliases
+source ~/.config/mutt/colors	# colors
+
+
+# main options
+set folder = ~/.Mail
+set spoolfile = "+xxx/INBOX"
+set timeout = 3
+set mail_check = 0
+unset move
+set smart_wrap
+set delete
+unset confirmappend
+set quit
+set beep_new = yes
+set check_new = yes
+set send_charset = "utf-8"
+set editor = vim
+set mailcap_path = ~/.mutt/mailcap
+
+
+# Status Bar -----------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d todelete)? %?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+color status red default
+
+
+#index options
+set sort = 'reverse-date'
+
+
+# pager options
+set tilde
+set markers = no
+auto_view text/html
+
+
+# formats
+set date_format     = "[%d/%m/%y] [%H:%M]"
+set index_format    = "%3C [%Z] %D %-20.18F //   %s"
+set alias_format    = "%4n %t %-20a %r"
+
+
+# composing mail
+set realname        = "Aurelien Mt."     # who am i?
+set sig_dashes                           # dashes before my sig... sweet
+set sendmail_wait   = 1                  # wait for sending... to complete
+set fcc_attach                           # save attachments with the body
+unset mime_forward                       # forward attachments as part of body
+set forward_format  = "Fwd: %s"          # format for subject when forwarding
+set forward_decode                       # decode when forwarding
+set attribution     = "On %d, %n wrote:" # set the attribution
+set reply_to                             # reply to Reply to: field
+set reverse_name                         # reply as whomever it was to
+set include                              # include message in replies
+set forward_quote                        # include message in forwards
+set beep_new
+ 
+
+# bindings - bépo
+bind index D delete-message
+bind browser,attach t next-entry
+bind browser,attach s previous-entry
+bind index t next-undeleted
+bind index s previous-undeleted
+bind generic,index t next-entry
+bind generic,index s previous-entry
+bind browser T next-entry
+bind browser S previous-entry
+bind pager t next-line
+bind pager s previous-line
+bind index,attach j tag-entry
+bind index J tag-pattern
+bind index ^J untag-pattern
+bind index <Esc>j tag-thread
+bind pager,index k save-message
+bind attach,pager c exit
+bind browser c previous-page
+bind pager h change-folder
+bind generic C top-page
+bind generic R bottom-page
+bind browser r select-entry
+bind index r display-message
+bind pager r view-attachments
+bind attach r view-attach
+bind attach k save-entry
+bind index,pager,attach o reply
+
+# macros
+macro index Z   "<shell-escape>/usr/bin/offlineimap -q -o<enter>" "sync IMAP" 

@@ -1,0 +1,28 @@
+# First, include any systemwide bindings and variable
+ # assignments from /etc/Inputrc
+ $include /etc/Inputrc
+ 
+ #options générales
+ set editing-mode vi
+ 
+ #configuration du clavier
+ $if mode=vi
+    set keymap vi-command
+    "s": history-search-backward
+    "t": history-search-forward
+    "l": vi-change-char
+    "L": vi-replace
+    "k": vi-subst
+    "h": vi-change-to
+    "hh": kill-whole-line
+    set keymap vi-move
+    "c": backward-char
+    "r": forward-char
+    "j": vi-char-search
+    "è": vi-prev-word
+    set keymap vi-insert
+    #si une touche ne marche pas en mode insert, la mapper en :self-insert
+    "\e[A": history-search-backward
+    "\e[B": history-search-forward
+ 
+ $endif

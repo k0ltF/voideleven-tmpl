@@ -1,0 +1,38 @@
+! adventure time
+
+! special
+#define fg   #f8dcc0
+#define bg  [97]#1f1d45
+#define crs  #f8dcc0
+
+! black
+#define blk       #050404
+#define bblk      #4e7cbf
+
+! red
+#define red       #bd0013
+#define bred       #fc5f5a
+
+! green
+#define grn       #4ab118
+#define bgrn      #9eff6e
+
+! yellow
+#define ylw       #e7741e
+#define bylw      #efc11a
+
+! blue
+#define blu       #0f4ac6
+#define bblu      #1997c6
+
+! magenta
+#define mag       #665993
+#define bmag      #9b5953
+
+! cyan
+#define cyn       #70a598
+#define bcyn      #c8faf4
+
+! white
+#define wht       #f8dcc0
+#define bwht      #f6f5fb
