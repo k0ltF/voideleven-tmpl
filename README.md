@@ -12,7 +12,7 @@ The rice is not finished, and some stuff could probably work in a better way
 ![pic](screenshots/000.png)
 
 
-## here you can find :
+## here you can find dots for:
 
 + bspwm
 + sxhkd
@@ -35,7 +35,7 @@ The rice is not finished, and some stuff could probably work in a better way
 + few fonts that I use (only the free ones)
 
 You can find i3 that I don't use anymore in my
-[legacy-dotfiles](https://github.com/k0ltF)
+[legacy-dotfiles](https://github.com/k0ltF).
 
 And more to come!
 
@@ -48,6 +48,6 @@ ncmpcpp, mpd, htop, weechat, homeshick, lxappearance
 
 ## Credits
 
-A lots of scripts that I use came from
-[Luke Smith](https://github.com/LukeSmithxyz) from whose I learn a lot. 
-And there also few things from [fs0ciety](http://code.fs0ciety.info) [offline!]
+Many scripts that I use came from [Luke Smith](https://github.com/LukeSmithxyz)
+from whose I learn a lot. There also few things from [fs0ciety](http://code.fs0ciety.info)
+[offline!].
