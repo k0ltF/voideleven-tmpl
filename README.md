@@ -9,6 +9,8 @@ keyboard layout. A french ergonomic (Dvorak way) keyboard layout.
 The rice is not finished, and some stuff could probably work in a better way
 … but I'm still learning. 
 
+## Preview
+
 ![pic](screenshots/000.png)
 
 
