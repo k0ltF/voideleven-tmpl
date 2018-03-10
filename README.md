@@ -1,4 +1,4 @@
-# kOltF's Voideleven templates
+# k0ltF's Voideleven templates
 
 Here are my dotfiles, as templates. The purpose of this repository is mostly
 to share my config and also to have a last backup in case of emergency.
