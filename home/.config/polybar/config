@@ -32,13 +32,13 @@ col = $(xrdb:color4)
 
 [bar/top]
 locale = fr_FR.UTF-8
-monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:eDP1:HDMI-1}
 bottom = true
 dpi=96
-width = 966px
+width = 100%
 height = 20px
-offset-x = 200px
-offset-y = 4px
+offset-x = 0px
+;offset-y = 4px
 background = ${colors.background}
 foreground = ${colors.foreground}
 border-size = 0

@@ -21,15 +21,12 @@ super + shift + BackSpace
 	sudo reboot
 
 # screenlock
-alt + Escape
-	slock
-
-alt + shift + Escape
-	slock && sudo zzz
+alt + {_,shift +} Escape
+	slock {_,& sudo zzz}
 
 # switch keyboard layout
 F12
-	$HOME/.config/scripts/xkbswitch.sh
+	$HOME/.config/scripts/kbdswitch.sh
 
 
 ###---bspwm hotkeys---###
