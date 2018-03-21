@@ -11,7 +11,7 @@ The rice is not finished, and some stuff could probably work in a better way
 
 ## Preview
 
-![pic](preview-000.png)
+![pic](preview-002.png)
 
 
 ## here you can find dots for:
