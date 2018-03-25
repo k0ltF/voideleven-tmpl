@@ -6,3 +6,4 @@
 # export
 export EDITOR="vim"
 export BROWSER="qutebrowser"
+export QEMU_AUDIO_DRV=alsa
