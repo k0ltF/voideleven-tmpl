@@ -1,0 +1,10 @@
+# vim: filetype=muttrc
+
+set from 	= "username@gmail.com"
+set sendmail 	= "/usr/bin/msmtp -a Gmail"
+set mbox	= "+Gmail/INBOX"
+set postponed	= "+[Gmail].Brouillons"
+set record  = "+[Gmail].Envoyés"
+color status cyan default
+
+macro index ,e "<change-folder>+ProtonMail/INBOX<return>" "change to ProtonMail"
