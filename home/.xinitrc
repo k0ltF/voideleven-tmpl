@@ -10,5 +10,4 @@ xrdb -merge ~/.Xresources &
 compton -b &
 redshift &
 unclutter &
-$HOME/.config/polybar/launch.sh &
 exec bspwm
