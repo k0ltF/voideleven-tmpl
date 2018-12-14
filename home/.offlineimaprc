@@ -1,38 +1,50 @@
 [general]
-accounts = yyy, xxx
+accounts = ProtonMail, Gmail
 starttls = yes
 ssl = yes
 autorefresh = 1
+quick = 10
 
 
-[Account yyy]
-localrepository = yyy-local
-remoterepository = yyy-remote
+# ProtonMail
 
-[Repository yyy-remote]
+[Account ProtonMail]
+localrepository = ProtonMail-local
+remoterepository = ProtonMail-remote
+
+[Repository ProtonMail-local]
+type = Maildir
+localfolders = ~/.mail/ProtonMail
+# delete remote mails that were deleted locally
+sync_deletes = yes
+
+[Repository ProtonMail-remote]
+type = IMAP
+remotehost = 127.0.0.1
+remoteport = 1143
+remoteuser = username@pm.me
+remotepass = <password>
+keepalive = 60
+holdconnectionopen = yes
+# delete local mails that were deleted on the remote server
+expunge = yes
+# is broken, but connecting locally to bridge so should be ok
+ssl = no
+
+
+# Gmail
+
+[Account Gmail]
+localrepository = Gmail-local
+remoterepository = Gmail-remote
+
+[Repository Gmail-remote]
 type = Gmail
-remoteuser = mail.yyy@gmail.com
-remotepass = password 
-folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
+remoteuser = username@pm.me
+remotepass = <password> 
+#folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
-[Repository yyy-local]
+[Repository Gmail-local]
 type = Maildir
-localfolders = ~/.Mail/yyy
-
-
-[Account xxx]
-localrepository = xxx-local
-remoterepository = xxx-remote
-
-[Repository xxx-remote]
-type = Gmail
-remoteuser = mail.xxx@custom-gmail.fr
-remotepass = password
-folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
-
-[Repository xxx-local]
-type = Maildir
-localfolders = ~/.Mail/xxx
-
+localfolders = ~/.mail/Gmail

@@ -1,15 +1,15 @@
 # vim: filetype=muttrc
 
 # sources
-source ~/.config/mutt/pmrc	# ProtonMail mailbox
-source ~/.config/mutt/gmailrc	# Gmail mailbox
+source ~/.config/mutt/xxxrc	# xxx mailbox
+source ~/.config/mutt/yyyrc	# yyy mailbox
 source ~/.config/mutt/aliases	# aliases
 source ~/.config/mutt/colors	# colors
 
 
 # main options
-set folder = ~/.mail
-set spoolfile = "+ProtonMail/INBOX"
+set folder = ~/.Mail
+set spoolfile = "+xxx/INBOX"
 set timeout = 3
 set mail_check = 0
 unset move
@@ -47,7 +47,7 @@ set alias_format    = "%4n %t %-20a %r"
 
 
 # composing mail
-set realname        = "Blackbird"     # who am i?
+set realname        = "Aurelien Mt."     # who am i?
 set sig_dashes                           # dashes before my sig... sweet
 set sendmail_wait   = 1                  # wait for sending... to complete
 set fcc_attach                           # save attachments with the body
