@@ -148,33 +148,29 @@ super + {Left,Down,Up,Right}
 # B
 super + b
 	qutebrowser
-
 super + shift + b 
-	$HOME/.config/scripts/tor.sh
+	firefox
 # É
 super + eacute
 	urxvt -e ranger
-
 super + shift + eacute
-	firefox
+	$HOME/.config/scripts/tor.sh
+
 # P
 super + p
 	urxvt -e neomutt
-
 super + shift + p
 	urxvt -e calcurse
+
 # O
 super + o
 	urxvt -e newsboat
 
 # È
 super + egrave
-	urxvt -e nmtui
-
+	notify-send.sh "$(date && acpi)"
 super + shift + egrave 
 	urxvt -e alsamixer
-
-
 
 
 #Print screen takes a screenshot.
@@ -209,4 +205,3 @@ XF86MonBrightnessDown
 	xbacklight -dec 10
 XF86MonBrightnessUp
 	xbacklight -inc 10
-
