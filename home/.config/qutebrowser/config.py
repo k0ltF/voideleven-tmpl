@@ -19,7 +19,7 @@ c.completion.cmd_history_max_items = 0
 # Number of URLs to show in the web history. 0: no history / -1:
 # unlimited
 # Type: Int
-c.completion.web_history_max_items = 0
+c.completion.web_history.max_items = 0
 
 # Store cookies. Note this option needs a restart with QtWebEngine on Qt
 # < 5.9.
