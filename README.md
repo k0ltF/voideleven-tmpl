@@ -1,26 +1,22 @@
 # k0ltF's Voideleven templates
 
-Here are my dotfiles, as templates. The purpose of this repository is mostly
-to share my config and also to have a last backup in case of emergency.
-
-Everything here works or intends to works with the [BÉPO](https://bepo.fr)
-keyboard layout. A french ergonomic (Dvorak way) keyboard layout.
+Here you can find my dotfiles. These are personal but you can probably find things that may interest you. Everything here works or intends to works with the [BÉPO](https://bepo.fr) keyboard layout. A french ergonomic (Dvorak way) keyboard layout.
 
 The rice is not finished, and some stuff could probably work in a better way
 … but I'm still learning. 
 
 ## Preview
 
-![pic](preview-002.png)
+![pic](previews/preview-002.png)
+*This is how it actually not looks like*
 
 
 ## here you can find dots for:
 
 + bspwm
 + sxhkd
-+ polybar
 + urxvt (rxvt-unicode)
-+ vim
++ neovim
 + bash (vi mode in BÉPO)
 + qutebrowser
 + ranger
@@ -32,24 +28,17 @@ The rice is not finished, and some stuff could probably work in a better way
 + mpv 
 + redshift
 + compton
++ dunst
 + neofetch
 + some scripts
-+ few fonts that I use (only the free ones)
++ few fonts that I use
 
-You can find i3 that I don't use anymore in my
-[legacy-dotfiles](https://github.com/k0ltF).
 
 And more to come!
 
 ## Programs that I Use
 
-qutebrowser, GIMP, Blender, qBittorent, NetworkManager, compton, pywal, mpv,
-zathura, feh, dmenu, passmenu, arandr, ranger, neomutt, newsboat, calcurse,
-ncmpcpp, mpd, htop, weechat, homeshick, lxappearance
-
-
-## Credits
-
-Many scripts that I use came from [Luke Smith](https://github.com/LukeSmithxyz)
-from whose I learn a lot. There also few things from [fs0ciety](http://code.fs0ciety.info)
-[offline!].
+qutebrowser, Blender, qBittorent, compton, pywal, mpv,
+zathura, feh, dmenu, arandr, ranger, neomutt, newsboat, calcurse,
+ncmpcpp, mpd, htop, weechat, homeshick, lxappearance, dunst,
+notify-send, pass, 
