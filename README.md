@@ -1,4 +1,4 @@
-# k0ltF's Voideleven templates
+# koltrast's Voideleven dotfiles
 
 Here you can find my dotfiles. These are personal but you can probably find things that may interest you. Everything here works or intends to works with the [BÉPO](https://bepo.fr) keyboard layout. A french ergonomic (Dvorak way) keyboard layout.
 
@@ -41,4 +41,4 @@ And more to come!
 qutebrowser, Blender, qBittorent, compton, pywal, mpv,
 zathura, feh, dmenu, arandr, ranger, neomutt, newsboat, calcurse,
 ncmpcpp, mpd, htop, weechat, homeshick, lxappearance, dunst,
-notify-send, pass, 
+notify-send, pass…
